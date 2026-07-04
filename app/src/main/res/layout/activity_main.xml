@@ -10,49 +10,97 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="200dp">
 
-        <ImageView
-            android:id="@+id/btnImage1"
-            android:src="@drawable/react1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp">
 
-        <ImageView
-            android:src="@drawable/react2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/btnImage1"
+                android:src="@drawable/react1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@null" />
+        </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:src="@drawable/react3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/btnImage2"
+                android:scaleType="fitXY"
+                android:src="@drawable/react2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@null" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/btnImage3"
+                android:scaleType="fitXY"
+                android:src="@drawable/react3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@null" />
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp">
+        android:layout_height="200dp">
 
-        <ImageView
-            android:src="@drawable/react1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp">
 
-        <ImageView
-            android:src="@drawable/react2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/btnImage4"
+                android:src="@drawable/react1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@null" />
+        </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:src="@drawable/react3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/react2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@null" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/react3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@null" />
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
+
+
 
 </LinearLayout>

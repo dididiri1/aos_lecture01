@@ -14,4 +14,10 @@
     <color name="btn_gradient_start">#7F5AF0</color>
     <color name="btn_gradient_end">#5B8DEF</color>
     <color name="text_subtitle">#E6E0FF</color>
+
+    <!-- 명언 리스트 카드 스타일 -->
+    <color name="sentence_bg">#F2F2F5</color>
+    <color name="sentence_text">#222222</color>
+    <color name="sentence_author">#888888</color>
+    <color name="sentence_card_stroke">#EEEEEE</color>
 </resources>

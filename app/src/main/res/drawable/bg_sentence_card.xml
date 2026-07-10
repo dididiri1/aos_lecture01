@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 명언 카드 배경: 둥근 흰색 카드 + 얇은 연회색 테두리 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/white" />
+    <corners android:radius="12dp" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/sentence_card_stroke" />
+</shape>

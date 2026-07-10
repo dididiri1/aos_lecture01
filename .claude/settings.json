@@ -1,6 +1,8 @@
 {
   "permissions": {
-    "allow": [],
-    "deny": []
-  }
+    "allow": ["Bash"],
+    "ask": [],
+    "defaultMode": "plan"
+  },
+  "plansDirectory": ".claude/plans/"
 }

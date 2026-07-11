@@ -2,22 +2,25 @@ package com.kangmin.myfirstfile
 
 import android.os.Bundle
 import android.widget.ListView
+import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 
 class ListViewActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_list_view)
 
-        val list_item = mutableListOf<ListViewModal>()
+        val list = mutableListOf<String>()
+        list.add("a")
+        list.add("b")
+        list.add("c")
 
-        list_item.add(ListViewModal("제목입니다1", "내용입니다1"))
-        list_item.add(ListViewModal("제목입니다2", "내용입니다2"))
-        list_item.add(ListViewModal("제목입니다3", "내용입니다3"))
-
-        val mainListView = findViewById<ListView>(R.id.mainListView)
-        val listViewAdapter = ListViewAdapter(list_item)
-        mainListView.adapter = listViewAdapter
+        val listViewAdapter = ListViewAdapter(list)
+        val listView = findViewById<ListView>(R.id.listView)
+        listView.adapter = listViewAdapter
     }
 }

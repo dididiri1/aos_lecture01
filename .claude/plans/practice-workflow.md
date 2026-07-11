@@ -20,7 +20,9 @@
 4. `MainActivity.kt` / `activity_main.xml`을 초기 상태로 되돌리기
 5. `./gradlew assembleDebug` 로 빌드 확인
 
-## 초기 상태 원본 (git commit 995bf55)
+## 초기 상태 원본
+
+> 2026-07-11 기준 최신 초기 상태. 리셋할 때는 아래 내용을 그대로 덮어쓴다 (예전 `git checkout 995bf55` 방식은 더 이상 유효하지 않음 — 그 커밋에는 ImageView/Toast가 있는 구버전이 들어있음).
 
 ### MainActivity.kt
 
@@ -28,8 +30,6 @@
 package com.kangmin.myfirstfile
 
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -37,10 +37,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val image1 = findViewById<ImageView>(R.id.btnImage1);
-        image1.setOnClickListener {
-            Toast.makeText(this, "1번 이미지 클릭!", Toast.LENGTH_LONG).show();
-        }
     }
 }
 ```
@@ -49,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -58,57 +54,8 @@ class MainActivity : AppCompatActivity() {
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/btnImage1"
-            android:src="@drawable/react1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
-
-        <ImageView
-            android:src="@drawable/react2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
-
-        <ImageView
-            android:src="@drawable/react3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp">
-
-        <ImageView
-            android:src="@drawable/react1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
-
-        <ImageView
-            android:src="@drawable/react2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
-
-        <ImageView
-            android:src="@drawable/react3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@null" />
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 ```
-
-> 초기 상태로 되돌릴 때: `git checkout 995bf55 -- app/src/main/java/com/kangmin/myfirstfile/MainActivity.kt app/src/main/res/layout/activity_main.xml`
 
 ## 지금까지 분리된 예제 Activity
 
@@ -119,3 +66,4 @@ class MainActivity : AppCompatActivity() {
 - `SentenceMainActivity` / `SentenceActivity` — 명언 랜덤 표시 + 전체 명언 카드 리스트
 - `RVActivity` — RecyclerView + 커스텀 어댑터 연습
 - `MenuActivity` — 위 예제들로 이동하는 버튼 목록 메뉴 화면 (Splash 다음 진입점)
+- `FragmentNavActivity` — Fragment + Navigation(NavHostFragment, main_nav.xml) 연습

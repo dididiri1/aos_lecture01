@@ -2,4 +2,6 @@
     <string name="app_name">myfirstfile</string>
     <string name="hello">Hello Android!!</string>
     <string name="default_btn">굴리기</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

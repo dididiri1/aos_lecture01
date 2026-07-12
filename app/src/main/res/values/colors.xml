@@ -20,4 +20,13 @@
     <color name="sentence_text">#222222</color>
     <color name="sentence_author">#888888</color>
     <color name="sentence_card_stroke">#EEEEEE</color>
+
+    <!-- 강좌 목록 앱 스타일 -->
+    <color name="course_bg">#F5F6FA</color>
+    <color name="course_header_bg">#1B2340</color>
+    <color name="course_card_bg">#FFFFFF</color>
+    <color name="course_card_stroke">#ECEDF2</color>
+    <color name="course_title_text">#1B2340</color>
+    <color name="course_badge_bg">#3D5AFE</color>
+    <color name="course_badge_text">#FFFFFF</color>
 </resources>

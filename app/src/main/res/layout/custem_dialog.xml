@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_card"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동 메모 추가"
+        android:textColor="@color/course_title_text"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/memoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_input_outline"
+        android:gravity="top|start"
+        android:hint="운동 메모를 입력하세요."
+        android:padding="12dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/course_title_text"
+        android:textColorHint="@color/sentence_author"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/dateSelectButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_input_outline"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/course_badge_bg"
+        android:gravity="center_vertical|start"
+        android:paddingStart="14dp"
+        android:text="날짜를 선택하세요."
+        android:textAllCaps="false"
+        android:textColor="@color/course_title_text"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

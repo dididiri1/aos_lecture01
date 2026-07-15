@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "513830726848",
+    "project_id": "km-login-test",
+    "storage_bucket": "km-login-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513830726848:android:831b12ab6e4e5691acd125",
+        "android_client_info": {
+          "package_name": "com.kangmin.myfirstfile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG40Oo58qpGuIT_txdwibPD1x7x28lL7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

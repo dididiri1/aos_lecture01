@@ -37,12 +37,16 @@
         android:drawableStart="@drawable/ic_calendar"
         android:drawablePadding="8dp"
         android:drawableTint="@color/course_badge_bg"
-        android:gravity="center_vertical|start"
+
         android:paddingStart="14dp"
         android:text="날짜를 선택하세요."
         android:textAllCaps="false"
-        android:textColor="@color/course_title_text"
         android:textSize="14sp" />
 
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:text="저장하기"
+        android:layout_height="50dp"/>
 
 </LinearLayout>

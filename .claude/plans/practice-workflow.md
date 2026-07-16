@@ -67,3 +67,4 @@ class MainActivity : AppCompatActivity() {
 - `RVActivity` — RecyclerView + 커스텀 어댑터 연습
 - `MenuActivity` — 위 예제들로 이동하는 버튼 목록 메뉴 화면 (Splash 다음 진입점)
 - `FragmentNavActivity` — Fragment + Navigation(NavHostFragment, main_nav.xml) 연습
+- `WorkoutMemoActivity` — 운동 메모 다이얼로그 + Firebase Realtime Database 저장/조회 연습

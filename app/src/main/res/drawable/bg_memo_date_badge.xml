@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 운동 메모 날짜 배지 배경: 연한 초록 알약 모양 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/memo_date_badge_bg" />
+    <corners android:radius="20dp" />
+</shape>

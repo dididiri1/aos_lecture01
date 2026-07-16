@@ -21,6 +21,12 @@
     <color name="sentence_author">#888888</color>
     <color name="sentence_card_stroke">#EEEEEE</color>
 
+    <!-- 운동 메모 리스트 카드 스타일 -->
+    <color name="memo_card_stroke">#EEEEEE</color>
+    <color name="memo_date_badge_bg">#E6F7EC</color>
+    <color name="memo_date_text">#2E9E5B</color>
+    <color name="memo_text">#333333</color>
+
     <!-- 강좌 목록 앱 스타일 -->
     <color name="course_bg">#F5F6FA</color>
     <color name="course_header_bg">#1B2340</color>

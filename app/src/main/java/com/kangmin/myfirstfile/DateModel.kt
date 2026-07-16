@@ -1,6 +1,6 @@
 package com.kangmin.myfirstfile
 
 data class DateModel(
-    val data : String = "",
+    val date : String = "",
     val memo : String = ""
 )

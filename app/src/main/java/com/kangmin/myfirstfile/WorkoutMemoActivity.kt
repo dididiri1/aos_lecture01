@@ -57,7 +57,7 @@ class WorkoutMemoActivity : AppCompatActivity() {
 
         writeBtn.setOnClickListener {
             val dialogView = LayoutInflater.from(this).inflate(R.layout.custem_dialog, null)
-            val alertDialog = AlertDialog.Builder(this).setView(dialogView).setTitle("운동 메모 다이얼로그")
+            val alertDialog = AlertDialog.Builder(this).setView(dialogView)
 
             val mAlertDialog = alertDialog.show()
 

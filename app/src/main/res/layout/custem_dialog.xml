@@ -28,7 +28,7 @@
         android:textColorHint="@color/sentence_author"
         android:textSize="14sp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/dateSelectButton"
         android:layout_width="match_parent"
         android:layout_height="52dp"
@@ -37,16 +37,23 @@
         android:drawableStart="@drawable/ic_calendar"
         android:drawablePadding="8dp"
         android:drawableTint="@color/course_badge_bg"
-
+        android:fontFamily="sans-serif-medium"
         android:paddingStart="14dp"
         android:text="날짜를 선택하세요."
         android:textAllCaps="false"
+        android:textColor="@color/course_title_text"
         android:textSize="14sp" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/saveBtn"
         android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_gradient"
+        android:fontFamily="sans-serif-medium"
         android:text="저장하기"
-        android:layout_height="50dp"/>
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
 
 </LinearLayout>

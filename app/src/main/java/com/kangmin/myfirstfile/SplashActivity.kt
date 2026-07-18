@@ -23,13 +23,13 @@ class SplashActivity : AppCompatActivity() {
 
         if (auth.currentUser != null) {
             Toast.makeText(this, "로그인 되어있음", Toast.LENGTH_LONG).show()
-            moveToMain()
+            moveToMenu()
         } else {
             auth.signInAnonymously()
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(this, "비회원 로그인 성공", Toast.LENGTH_LONG).show()
-                        moveToMain()
+                        moveToMenu()
                     } else {
                         Toast.makeText(this, "비회원 로그인 실패", Toast.LENGTH_LONG).show()
                     }
@@ -37,9 +37,9 @@ class SplashActivity : AppCompatActivity() {
         }
     }
 
-    private fun moveToMain() {
+    private fun moveToMenu() {
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, MenuActivity::class.java))
             finish()
         }, 3000)
     }

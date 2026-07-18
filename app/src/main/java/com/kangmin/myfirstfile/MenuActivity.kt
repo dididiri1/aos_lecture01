@@ -35,6 +35,7 @@ class MenuActivity : AppCompatActivity() {
             "RecyclerView 연습" to RVActivity::class.java,
             "Fragment + Navigation 연습" to FragmentNavActivity::class.java,
             "운동 메모 + Realtime Database" to WorkoutMemoActivity::class.java,
+            "D-Day 계산기" to DDayActivity::class.java,
         )
 
         val buttonHeight = (56 * resources.displayMetrics.density).toInt()

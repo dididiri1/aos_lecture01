@@ -68,3 +68,8 @@ class MainActivity : AppCompatActivity() {
 - `MenuActivity` — 위 예제들로 이동하는 버튼 목록 메뉴 화면 (Splash 다음 진입점)
 - `FragmentNavActivity` — Fragment + Navigation(NavHostFragment, main_nav.xml) 연습
 - `WorkoutMemoActivity` — 운동 메모 다이얼로그 + Firebase Realtime Database 저장/조회 연습
+- `DDayActivity` — DatePickerDialog로 시작일/종료일 선택 후 D-Day(일수) 계산
+
+## 예제 연습 종료 (2026-07-18)
+
+모든 예정된 예제 연습이 끝났다. 앱 흐름은 `SplashActivity` → `MenuActivity`(예제 허브)로 고정되며, `MainActivity`는 다음 예제를 위한 초기 상태 템플릿으로 계속 리셋해서 재사용한다.
